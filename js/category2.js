@@ -15,6 +15,9 @@ function cardClick4() {
     moneyTotal = parseFloat(moneyTotal) + getpriceNumber;
     storeMoney.innerText= moneyTotal.toFixed(2);
 
+    const grandTotal = document.getElementById("GrandTotal");
+       grandTotal.innerText=moneyTotal.toFixed(2);
+
     let btn = document.getElementById("btnApply");
     if (moneyTotal <= 200) {
        btn.disabled = true;
@@ -48,6 +51,9 @@ function cardClick5() {
     moneyTotal = parseFloat(moneyTotal) + getpriceNumber;
     storeMoney.innerText= moneyTotal.toFixed(2);
 
+    const grandTotal = document.getElementById("GrandTotal");
+       grandTotal.innerText=moneyTotal.toFixed(2);
+
     let btn = document.getElementById("btnApply");
     if (moneyTotal <= 200) {
        btn.disabled = true;
@@ -80,6 +86,9 @@ function cardClick6() {
     const storeMoney = document.getElementById('totalprice');
     moneyTotal = parseFloat(moneyTotal) + getpriceNumber;
     storeMoney.innerText= moneyTotal.toFixed(2);
+
+    const grandTotal = document.getElementById("GrandTotal");
+       grandTotal.innerText=moneyTotal.toFixed(2);
  
     let btn = document.getElementById("btnApply");
     if (moneyTotal <= 200) {
