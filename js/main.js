@@ -15,7 +15,7 @@ function cardClick() {
     const getpriceNumber = parseFloat(getprice);
     const storeMoney = document.getElementById('totalprice');
     moneyTotal = parseFloat(moneyTotal) + getpriceNumber;
-    storeMoney.innerText= moneyTotal;
+    storeMoney.innerText= moneyTotal.toFixed(2);
     let btn = document.getElementById("btnApply");
     if (moneyTotal <= 200) {
        btn.disabled = true;
@@ -50,7 +50,7 @@ function cardClick2() {
     const getpriceNumber = parseFloat(getprice);
     const storeMoney = document.getElementById('totalprice');
     moneyTotal = parseFloat(moneyTotal) + getpriceNumber;
-    storeMoney.innerText= moneyTotal;
+    storeMoney.innerText= moneyTotal.toFixed(2);
 
     let btn = document.getElementById("btnApply");
     if (moneyTotal <= 200) {
@@ -84,7 +84,7 @@ function cardClick3() {
     const getpriceNumber = parseFloat(getprice);
     const storeMoney = document.getElementById('totalprice');
     moneyTotal = parseFloat(moneyTotal) + getpriceNumber;
-    storeMoney.innerText= moneyTotal;
+    storeMoney.innerText= moneyTotal.toFixed(2);
 
     let btn = document.getElementById("btnApply");
     if (moneyTotal <= 200) {
@@ -113,11 +113,11 @@ function btnCpn(){
     if (addCoupon === "SELL200") {
        const discount = moneyTotal * 20/100;
        const discountId = document.getElementById("discount");
-       discountId.innerText = discount;
+       discountId.innerText = discount.toFixed(2);
 
        const afterDiscount = moneyTotal - discount;
        const grandTotal = document.getElementById("GrandTotal");
-       grandTotal.innerText=afterDiscount;
+       grandTotal.innerText=afterDiscount.toFixed(2);
 
       
         
